@@ -18,7 +18,11 @@
             #endregion
 
             #region Q3
-            Helper.PrintWelcomeMessage();
+            //Helper.PrintWelcomeMessage();
+            #endregion
+
+            #region Q4
+            Helper.PrintBookTitle("Clean Code");
             #endregion
         }
     }

@@ -6,5 +6,10 @@
         {
             Console.WriteLine("Welcome to the library!");
         }
+
+        public static void PrintBookTitle(string title)
+        {
+            Console.WriteLine("Book title: " +title);
+        }
     }
 }
