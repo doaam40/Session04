@@ -50,9 +50,18 @@
             #endregion
 
             #region Q8
-            double[] prices = { 25.5, 40.0 };
-            Helper.ReplaceArray(ref prices);
-            Console.WriteLine(prices.Length);
+            //double[] prices = { 25.5, 40.0 };
+            //Helper.ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length);
+            #endregion
+
+            #region Q9
+            string title = "Clean Code";
+            double price;
+            bool flag = Helper.TryGetPrice(title, out price);
+
+            if(flag)
+                Console.WriteLine(price);
             #endregion
         }
     }

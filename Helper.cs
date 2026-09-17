@@ -31,5 +31,19 @@
         {
             prices = new double[] { 10.0, 12.5, 15.0 };
         }
+
+        public static bool TryGetPrice(string title, out double price)
+        {
+            if(title == "Clean Code")
+            {
+                price = 25.5;
+                return true;
+            }
+            else
+            {
+                price = 0;
+                return false;
+            }
+        }
     }
 }
