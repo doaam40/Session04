@@ -45,5 +45,10 @@
                 return false;
             }
         }
+
+        public static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine($"Book title is: {title}, and pages no.: {pages}");
+        }
     }
 }

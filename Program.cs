@@ -56,12 +56,19 @@
             #endregion
 
             #region Q9
-            string title = "Clean Code";
-            double price;
-            bool flag = Helper.TryGetPrice(title, out price);
+            //string title = "Clean Code";
+            //double price;
+            //bool flag = Helper.TryGetPrice(title, out price);
 
-            if(flag)
-                Console.WriteLine(price);
+            //if(flag)
+            //    Console.WriteLine(price);
+            #endregion
+
+            #region Q10
+            string title = "Clean Code";
+            int pages = 400;
+            Helper.PrintBookInfo(title);
+            Helper.PrintBookInfo(title, pages);
             #endregion
         }
     }
