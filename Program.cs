@@ -22,7 +22,15 @@
             #endregion
 
             #region Q4
-            Helper.PrintBookTitle("Clean Code");
+            //Helper.PrintBookTitle("Clean Code");
+            #endregion
+
+            #region Q5
+            int pages = 400;
+            Helper.AddBonusPages(pages);
+            Console.WriteLine(pages);
+            //I expect to see 400 also, because it is value type call by value and the change happened in the AddBonusPages stack frame
+            //not in pages varaiable in memory
             #endregion
         }
     }
