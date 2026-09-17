@@ -34,11 +34,19 @@
             #endregion
 
             #region Q6
-            double[] prices = { 25.5, 40.0 };
-            Helper.ApplyDiscount(prices);
-            Console.WriteLine(prices[0]);
-            //I expect to see 20.5, because it is reference type pass by value and the value is the address of the object in heap memory
-            //so the prices array in function is also has the address of the object in heap memory so the change occure
+            //double[] prices = { 25.5, 40.0 };
+            //Helper.ApplyDiscount(prices);
+            //Console.WriteLine(prices[0]);
+            ////I expect to see 20.5, because it is reference type pass by value and the value is the address of the object in heap memory
+            ////so the prices array in function is also has the address of the object in heap memory so the change occure
+            #endregion
+
+            #region Q7
+            int pages = 400;
+            Helper.AddBonusPagesByRef(ref pages);
+            Console.WriteLine(pages);
+            //the result is 450 as it is value type pass by reference and the change happened in the same place in memory not in the
+            //AddBonusPagesByRef stack frame so the change occure
             #endregion
         }
     }

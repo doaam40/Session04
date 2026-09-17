@@ -21,5 +21,10 @@
         {
             prices[0] -= 5;
         }
+
+        public static void AddBonusPagesByRef(ref int pages)
+        {
+            pages += 50;
+        }
     }
 }
