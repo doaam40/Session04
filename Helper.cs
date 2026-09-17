@@ -16,5 +16,10 @@
         {
             pages += 50;
         }
+
+        public static void ApplyDiscount(double[] prices)
+        {
+            prices[0] -= 5;
+        }
     }
 }

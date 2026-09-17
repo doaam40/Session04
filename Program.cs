@@ -26,11 +26,19 @@
             #endregion
 
             #region Q5
-            int pages = 400;
-            Helper.AddBonusPages(pages);
-            Console.WriteLine(pages);
-            //I expect to see 400 also, because it is value type call by value and the change happened in the AddBonusPages stack frame
-            //not in pages varaiable in memory
+            //int pages = 400;
+            //Helper.AddBonusPages(pages);
+            //Console.WriteLine(pages);
+            ////I expect to see 400 also, because it is value type call by value and the change happened in the AddBonusPages stack frame
+            ////not in pages varaiable in memory
+            #endregion
+
+            #region Q6
+            double[] prices = { 25.5, 40.0 };
+            Helper.ApplyDiscount(prices);
+            Console.WriteLine(prices[0]);
+            //I expect to see 20.5, because it is reference type pass by value and the value is the address of the object in heap memory
+            //so the prices array in function is also has the address of the object in heap memory so the change occure
             #endregion
         }
     }
