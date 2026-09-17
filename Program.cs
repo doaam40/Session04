@@ -67,8 +67,12 @@
             #region Q10
             string title = "Clean Code";
             int pages = 400;
-            Helper.PrintBookInfo(title);
-            Helper.PrintBookInfo(title, pages);
+            //Helper.PrintBookInfo(title);
+            //Helper.PrintBookInfo(title, pages);
+            #endregion
+
+            #region Q11
+            Helper.PrintBookInfo(pages : 400, title : "Clean Code");
             #endregion
         }
     }
