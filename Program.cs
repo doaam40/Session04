@@ -65,14 +65,18 @@
             #endregion
 
             #region Q10
-            string title = "Clean Code";
-            int pages = 400;
+            //string title = "Clean Code";
+            //int pages = 400;
             //Helper.PrintBookInfo(title);
             //Helper.PrintBookInfo(title, pages);
             #endregion
 
             #region Q11
-            Helper.PrintBookInfo(pages : 400, title : "Clean Code");
+            //Helper.PrintBookInfo(pages : 400, title : "Clean Code");
+            #endregion
+
+            #region Q12
+            Helper.PrintAllTitles("Clean Code", "The Pragmatic Programmer", "Refactoring");
             #endregion
         }
     }

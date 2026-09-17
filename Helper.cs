@@ -50,5 +50,13 @@
         {
             Console.WriteLine($"Book title is: {title}, and pages no.: {pages}");
         }
+
+        public static void PrintAllTitles(params string[] titles)
+        {
+            foreach (string title in titles) 
+            {
+                Console.WriteLine(title);
+            }
+        }
     }
 }
