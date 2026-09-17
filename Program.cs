@@ -42,11 +42,17 @@
             #endregion
 
             #region Q7
-            int pages = 400;
-            Helper.AddBonusPagesByRef(ref pages);
-            Console.WriteLine(pages);
-            //the result is 450 as it is value type pass by reference and the change happened in the same place in memory not in the
-            //AddBonusPagesByRef stack frame so the change occure
+            //int pages = 400;
+            //Helper.AddBonusPagesByRef(ref pages);
+            //Console.WriteLine(pages);
+            ////the result is 450 as it is value type pass by reference and the change happened in the same place in memory not in the
+            ////AddBonusPagesByRef stack frame so the change occure
+            #endregion
+
+            #region Q8
+            double[] prices = { 25.5, 40.0 };
+            Helper.ReplaceArray(ref prices);
+            Console.WriteLine(prices.Length);
             #endregion
         }
     }
